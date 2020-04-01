@@ -9,12 +9,10 @@ var GithubApiService = /** @class */ (function () {
     function GithubApiService() {
     }
     GithubApiService.prototype.getUserInfo = function (callback) {
-        request_1.default.get("http://iwenwiki.com/api/blueberrypai/getIndexBanner.php", 
-        //   options,
-        function (error, response, body) {
+        request_1.default.get("http://iwenwiki.com/api/blueberrypai/getIndexBanner.php", function (error, response, body) {
             var responseBody = JSON.parse(body);
             var indexBanner = new IndexBanner_1.IndexBanner(responseBody);
-            callback(indexBanner.success);
+            callback(indexBanner);
         });
     };
     return GithubApiService;

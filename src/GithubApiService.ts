@@ -1,7 +1,7 @@
 import request from "request";
 import { IndexBanner } from "./IndexBanner";
 export class GithubApiService {
-  getUserInfo(callback: any) {
+  getUserInfo(callback: (indexBanner: IndexBanner) => void) {
     request.get(
       "http://iwenwiki.com/api/blueberrypai/getIndexBanner.php",
       (error: any, response: any, body: any) => {
