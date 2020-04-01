@@ -1,4 +1,5 @@
-###typescript node运行环境搭建
+###typescript node 运行环境搭建
+
 1. 安装 typescript 命令工具
 
 ```
@@ -43,14 +44,20 @@ console.log("hello");
 
 7. 执行 `npm start` 命令即可运行 ts 代码
 
-### 安装request包
-~~~
+### 安装 request 包
+
+```
 yarn add request
 yarn add @types/request
-~~~
+```
 
-### 安装express包
-~~~
+### 安装 express 包
+
+```
 yarn add express
 yarn add @types/express
-~~~
+```
+
+### 访问 api
+
+`http://localhost:3000/indexBanner`
