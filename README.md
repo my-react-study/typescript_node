@@ -48,3 +48,9 @@ console.log("hello");
 yarn add request
 yarn add @types/request
 ~~~
+
+### 安装express包
+~~~
+yarn add express
+yarn add @types/express
+~~~
