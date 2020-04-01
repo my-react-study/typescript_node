@@ -36,7 +36,7 @@ console.log("hello");
 
 6. 修改 package.json 的命令
 
-在 scripts 节点创建如下命令
+在 scripts 节点创建如下命令,作用是将ts代码编译为js代码
 
 ```
 "start": "tsc && node out/index.js "
